@@ -133,4 +133,5 @@
 
 print("/"*100)
 import random
-randy=random.
+randy=random.randint(1.10)
+print(randy)
