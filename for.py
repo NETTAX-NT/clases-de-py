@@ -131,3 +131,6 @@
 #     else:
 #         print(f"el numero {num} es impar")
 
+print("/"*100)
+import random
+randy=random.
