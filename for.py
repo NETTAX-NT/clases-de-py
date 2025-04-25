@@ -53,3 +53,81 @@
 #     else:
 #         print("erro de clave")
 
+# num=int(input("ingrese numero \n"))
+# kaiser=0
+# nose=0
+# for i in range(num):
+#     voto=int(input("ingrese su voto: \n1.-kaiser \n2.-nose \n"))
+#     if voto==1:
+#         kaiser +=1
+#     elif voto==2:
+#         nose +=1
+#     else:
+#         print("erro selecsione un voto ")
+# print(f"los votos de keiser son {kaiser}")
+# print(f"los votos de nose son {nose}")
+# if kaiser>nose:
+#     print("gano kaiser")
+# else:
+#     print("gano nose")
+
+# palabra=str(input("ingrese un palabra "))
+# caracter=0
+# for i in palabra:
+#     print(i)
+#     caracter+=1
+#     print(f"cantidad de caracter {caracter}")
+# nume=0
+# while nume<=5:
+#     nume +=1
+#     print(nume)
+
+# import time 
+# num=10
+# while num>=0:
+#     print(num)
+#     time.sleep(1)
+#     num -=1
+# resp="no"
+# while resp!="si":
+#     repr=input("deseas salir del sistema")
+
+# clave=2123
+# inte=3
+# ingre=int(input("ingrese su clave "))
+# while clave!=ingre :
+#     print("error de clave ")
+#     if inte==0:
+#         break
+#     inte -=1
+#     print(f"leque dan {inte} intentos")
+# if clave==ingre:
+#     print("clave aceptado ")
+# else:
+#     print("sistema bloqueado")
+
+# op=int(input("1.-pan 250 \n2.-donas 500 \n3.-confor 550 \n0.- salir \n"))
+# total=0
+# while op != 0:
+#     op=int(input("1.-pan 250 \n2.-donas 500 \n3.-confor 550 \n0.- salir \n"))
+#     if op==1:
+#         print("pan")
+#         total +=250
+#     elif op==2:
+#         print("donas")
+#         total +=500
+#     elif op==3:
+#         print("confor")
+#         total +=550
+#     else:
+#         print("escojer un numero ")
+# print(f"el total es {total}")
+# print(f"total con iva {round(total*1.19)}")
+
+# num=5
+# while num!=0:
+#     if num% 2==0:
+#         print(f"el numero {num} es par")
+#     else:
+#         print(f"el numero {num} es impar")
+
