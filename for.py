@@ -145,16 +145,16 @@
 #         print(f"edad fuera de rango de 0.100")
 # print("as ingreaso exsitosa mente")
 
-# num=int(input("ingrese un numero"))
-# e=0
-# c=0
-# while num!=0:
-#     num-=1
-#     if num% 2==0:
-#         print(f"el numero {num} es par")
-#         e+=1
-#     else:
-#         print(f"el numero {num} es impar")
-#         c+=1
-# print(f"numero par {e}")
-# print(f"numero par {c}")
+num=int(input("ingrese un numero"))
+e=0
+c=0
+while num!=0:
+    num-=1
+    if num% 2==0:
+        print(f"el numero {num} es par")
+        e+=1
+    else:
+        print(f"el numero {num} es impar")
+        c+=1
+print(f"numero par {e}")
+print(f"numero par {c}")
