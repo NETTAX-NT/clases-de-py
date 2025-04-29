@@ -131,7 +131,30 @@
 #     else:
 #         print(f"el numero {num} es impar")
 
-print("/"*100)
-import random
-randy=random.randint(1.10)
-print(randy)
+# print("/"*100)
+# import random
+# randy=random.randint(1.10)
+# print(randy)
+'''
+% = espara para ser ver si es un numero de otro 
+'''
+# edad=-1
+# while edad <0 or edad>100:
+#     edad=int(input("ingrese edad "))
+#     if (edad <0 or edad> 100):
+#         print(f"edad fuera de rango de 0.100")
+# print("as ingreaso exsitosa mente")
+
+# num=int(input("ingrese un numero"))
+# e=0
+# c=0
+# while num!=0:
+#     num-=1
+#     if num% 2==0:
+#         print(f"el numero {num} es par")
+#         e+=1
+#     else:
+#         print(f"el numero {num} es impar")
+#         c+=1
+# print(f"numero par {e}")
+# print(f"numero par {c}")
