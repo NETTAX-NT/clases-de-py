@@ -145,16 +145,94 @@
 #         print(f"edad fuera de rango de 0.100")
 # print("as ingreaso exsitosa mente")
 
-num=int(input("ingrese un numero"))
-e=0
-c=0
-while num!=0:
-    num-=1
-    if num% 2==0:
-        print(f"el numero {num} es par")
-        e+=1
-    else:
-        print(f"el numero {num} es impar")
-        c+=1
-print(f"numero par {e}")
-print(f"numero par {c}")
+# num=int(input("ingrese un numero"))
+# e=0
+# c=0
+# while num!=0:
+#     num-=1
+#     if num% 2==0:
+#         print(f"el numero {num} es par")
+#         e+=1
+#     else:
+#         print(f"el numero {num} es impar")
+#         c+=1
+# print(f"numero par {e}")
+# print(f"numero par {c}")
+
+# import random
+
+# numAzar=random.randint(1,30)
+
+# if numAzar>=20:
+#     print("puedes pasar")
+# else:
+#     print("le falta numero")
+
+# import random
+# numAsar=random.randint(1,50)
+# num=int(input("ingrese un numero"))
+# while num!= numAsar: 
+#     if num > numAsar:
+#         print("el numero es meno ")
+#         num=int(input("in tentalo de nuevo"))
+#     else:
+#         print("el numero es mallor ")
+#         num=int(input("in tentalo de nuevo"))
+# print("ganaste ")
+
+# import random
+# meta=30
+# turno=random.randint(1,2)
+# j1=0
+# j2=0
+
+# import time
+# while j1<meta and j2<meta :
+#     turno +=1
+#     if turno % 2==0:
+#         print("jugador 1")
+#         time.sleep(1)
+#         dado=random.randint(1,6)
+#         j1 += dado
+#         print(f"el jugador saco {dado} \navanza hasta la casilla {j1}")
+#     else:
+#         print("jugador 2")
+#         time.sleep(1)
+#         dado=random.randint(1,6)
+#         j2 += dado
+#         print(f"el jugador saco {dado} \navanza hasta la casilla {j2}")
+
+# if j1>=meta :
+#     print("gana j1")
+# elif j2>=meta:
+#     print("gana j2")
+
+# arancel=200000
+# descuento=0
+# comuna=int(input("1-la florida \n2-la pintana \n3-puente alto \nsan joaquin \nselecciona una comuna \n"))
+# if comuna==1:
+#     descuento +=20
+# elif comuna==2:
+#     descuento +=30
+# elif comuna==3:
+#     descuento +=25
+# elif comuna==4:
+#     descuento +=15
+# else:
+#     print(" escojer un valor valor valido")
+
+# grupo=int(input("cuantas perosna vive "))
+# if grupo==1:
+#     descuento +=2
+# elif grupo>1 and grupo<5:
+#      descuento +=3
+# elif grupo>=5:
+#     descuento+=4
+# else:
+#     print(" seleccion incorrecto")
+
+# print(f"el descuento es {descuento}")
+# desc=arancel*descuento/100
+# total=arancel-desc
+# print(f"el total a pagar es ${total}")
+         
