@@ -186,6 +186,8 @@
 # j1=0
 # j2=0
 
+# casi ludo
+
 # import time
 # while j1<meta and j2<meta :
 #     turno +=1
@@ -202,10 +204,12 @@
 #         j2 += dado
 #         print(f"el jugador saco {dado} \navanza hasta la casilla {j2}")
 
-# if j1>=meta :
+# if j1>j2 :
 #     print("gana j1")
-# elif j2>=meta:
+# else:
 #     print("gana j2")
+
+# sfsfsfsfsf
 
 # arancel=200000
 # descuento=0
@@ -234,5 +238,68 @@
 # print(f"el descuento es {descuento}")
 # desc=arancel*descuento/100
 # total=arancel-desc
-# print(f"el total a pagar es ${total}")
-         
+# print(f"el total a pagar es ${total
+
+# Clasificar segun categoria y precio
+# Cat 1 +200, cat 2 +400, cat 3 +600
+# Decuento Precios : 1000 y menos;3%, entre 1001 y 5000 
+# ;5% , 5001 y mas 6%
+# Poner listado de 3 productos por categoria, las cat son 1 ,2 y 3
+# Agregar los impuestos al ´precio , segun la cat y luego 
+# aplicar descuento al total de la boleta segun el monto
+'''
+Ej:
+Producto 1, cat 2, 1500 + 400
+Producto 2 cat 1, 8000 + 200
+EL total es 10100 * - 6%
+EL total a pagar es: 9494
+'''
+# cat=int(input(" 1.- eletrodo meticos \n2.- ropa \n3.- comida \n4.- para salir: "))
+# descuento=0
+# total=0
+# if cat==1:
+#     print("sele sumara +200 ")
+#     cat=int(input("1.-computadora $7000 \n2.-celular $4000: "))
+#     if cat==1:
+#         total+=7000
+#         sum=total+200
+#         print(f"producto 1 categoria 1 {total} + 200 ")
+#     if cat==2:
+#         total+=4000
+#         sum=total+200
+#         print(f"producto 2 categoria 1 {total} + 200 ")
+# elif cat==2:
+#     print("sele sumara +400 ")
+#     cat=int(input("1.- vestidos $1000 \n2.- zapatos $1500: "))
+#     if cat==1:
+#         total+=1000
+#         sum=total+400
+#         print(f"producto 1 categoria 2 {total} + 400 ")
+#     if cat==2:
+#         total+=1500
+#         sum=total+400
+#         print(f"producto 2 categoria 2 {total} + 400 ")
+# elif cat==3:
+#     print("sele sumara +600 ")
+#     cat=int(input("1.- maruchan $500 \n2.- chocolate $1500: "))
+#     if cat==1:
+#         total+=500
+#         sum=total+600
+#         print(f"producto 1 categoria 3 {total} + 600 ")
+#     if cat==2:
+#         total+=1500
+#         sum=total+600
+#         print(f"producto 2 categoria 3 {total} + 600 ")
+
+# if sum<=1000:
+#     descuento +=3
+# elif sum>1000 and sum<5001:
+#     descuento +=5   
+# else:
+#     descuento +=6  
+
+# print(f"eltotal es ${sum} con descuento de %{descuento}")
+# des=sum*descuento/100
+# total=sum-des
+# print(f"total a pagar {total}")
+

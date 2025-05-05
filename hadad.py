@@ -80,3 +80,8 @@ print(f"el valor resultante es {num}")
 # Si el numero ingresado es mayor muestre "El numero a adivinar es mayor"
 # de forma contraria escriba "El numero a adivinar es menor"
 # Hacer 2 versiones, una de intentos infinitos y otra con solo 5
+
+
+
+
+   
