@@ -303,3 +303,66 @@ EL total a pagar es: 9494
 # total=sum-des
 # print(f"total a pagar {total}")
 
+# botella=600
+# sed=True
+import time
+import random
+# while botella>=0 and sed:
+#     print("gluc, gluc")
+#     botella-=random.randint(20,60)
+#     print(" queda", botella )
+#     resp=input("aun tiene sed (si/no) ")
+#     if resp=="no":
+#         sed=False
+#     time.sleep(1)
+
+# chocolate=1
+
+# if chocolate==1:
+#     print("hay chocholate")
+# else: 
+#     print("no hay chocholate") 
+
+# print("salio gta6 1.-si o 0.-no")
+# gta6=int(input())
+# if gta6==1:
+#     print("se puede jugar")
+# else:
+#     print("se volvio a retrasar")
+
+# credito=0
+# cantidad=int(input("cuanto gana mensul mente "))
+# if cantidad>=500000 and  cantidad<=1000000:
+#     credito+=300000
+# elif cantidad>=1000001 and  cantidad<=150000:
+#     credito+=650000
+# else:
+#     credito+=1000000
+
+# nivel=int(input("ingrese su nivel educacional \n1.-basico \n2.-medio \n3.-superior \n"))
+# if nivel==1:
+#     credito*=1
+# elif nivel==2:
+#     credito*=1.3
+# elif nivel==3:
+#     credito*=1.5
+
+# naci=input("eres de chile (si/no) ")
+# if naci=="si":
+#     credito+=300000
+# else:
+#     credito=credito
+
+# print(f"la cantidad de credito es {credito}")
+
+# ksjakjafhkjahfjk
+
+# digito1=int(input("ungrese un digito"))
+# digito2=int(input("ungrese un digito que sea mallor al anterior "))
+# while digito2<=digito1:
+#     digito2=int(input("que sea mallor al anterior "))
+# aleatorio=random.randint(digito1,digito2)
+# for i in range(aleatorio):
+#     print("▄")
+# print(f"se repitio estas veses{aleatorio}")0
+# sakjhaahdjka
