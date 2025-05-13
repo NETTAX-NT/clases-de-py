@@ -365,4 +365,5 @@ import random
 # for i in range(aleatorio):
 #     print("▄")
 # print(f"se repitio estas veses{aleatorio}")0
-# sakjhaahdjka
+# sakjhaahdjk
+
