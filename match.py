@@ -129,19 +129,48 @@
 #                 break
 # # cat()
 
-alumnos=int(input("ingrese la cantidad de alumnos: "))
-mientras=0
-for i in range(alumnos):
-    i+=1
-    mientras=0
-    nota=int(input("ingrese la cantidad de notas: ")) 
-    for e in range(nota):
-        e+=1
-        notas=int(input(f"ingrese la nota {e} alumno {i}: "))
-        mientras+=notas
-        promedio=mientras/nota
-    if promedio>=4.0:
-        print(f"aprobaste tu nota es {promedio}")
-    else:
-        print(f"reprobaste {promedio}")
+# alumnos=int(input("ingrese la cantidad de alumnos: "))
+# mientras=0
+# for i in range(alumnos):
+#     i+=1
+#     mientras=0
+#     suma=0
+#     nota=int(input("ingrese la cantidad de notas: ")) 
+#     for e in range(nota):
+#         e+=1
+#         notas=int(input(f"ingrese la nota {e} alumno {i}: "))
+#         mientras+=notas
+#         promedio=mientras/nota
 
+#     if promedio>=4.0:
+#         print(f"aprobaste tu nota es {promedio}")
+#     else:
+#         print(f"reprobaste {promedio}")
+
+import random
+import time
+while True:
+    try:
+        perros=int(input("cuantos perros envias:"))
+    except Exception:
+        print("solo numeros ")
+    else:
+        break
+cuotas=random.randint(1,5)
+n=0
+e=0
+print(f"la cuota minima es {cuotas}")
+time.sleep(1)
+for i in range(perros):
+    time.sleep(1)
+    conejos=random.randint(1,7)
+    i+=1
+    print(f"el perro {i} trajos {conejos} conejos")
+    if conejos>=cuotas:
+        print(f"el perro {i} resivio premio ")
+        n+=1
+    elif conejos<cuotas:
+        print(f"el perro {i} no resivio premio ")
+        e+=1
+print(f"perros que cumplieros {n}")
+print(f"perros que no cumplieron {e}")
