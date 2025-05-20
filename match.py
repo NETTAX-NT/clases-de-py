@@ -149,28 +149,107 @@
 
 import random
 import time
-while True:
-    try:
-        perros=int(input("cuantos perros envias:"))
-    except Exception:
-        print("solo numeros ")
-    else:
-        break
-cuotas=random.randint(1,5)
-n=0
-e=0
-print(f"la cuota minima es {cuotas}")
-time.sleep(1)
-for i in range(perros):
-    time.sleep(1)
-    conejos=random.randint(1,7)
-    i+=1
-    print(f"el perro {i} trajos {conejos} conejos")
-    if conejos>=cuotas:
-        print(f"el perro {i} resivio premio ")
-        n+=1
-    elif conejos<cuotas:
-        print(f"el perro {i} no resivio premio ")
-        e+=1
-print(f"perros que cumplieros {n}")
-print(f"perros que no cumplieron {e}")
+# while True:
+#     try:
+#         perros=int(input("cuantos perros envias:"))
+#     except Exception:
+#         print("solo numeros ")
+#     else:
+#         break
+# cuotas=random.randint(1,5)
+# n=0
+# e=0
+# print(f"la cuota minima es {cuotas}")
+# time.sleep(1)
+# for i in range(perros):
+#     time.sleep(1)
+#     conejos=random.randint(1,7)
+#     i+=1
+#     print(f"el perro {i} trajos {conejos} conejos")
+#     if conejos>=cuotas:
+#         print(f"el perro {i} resivio premio ")
+#         n+=1
+#     elif conejos<cuotas:
+#         print(f"el perro {i} no resivio premio ")
+#         e+=1
+# print(f"perros que cumplieros {n}")
+# print(f"perros que no cumplieron {e}")
+
+# rojos=int(input("cuantos rojos tienes"))
+
+# for i in range(rojos):
+#     taller=random.randint(1,4)
+#     decimas=0.3*taller
+#     if decimas>=1:
+#         vives=True
+#     else:
+#         f=False
+#     nota=int(input("ingrese sus notas"))
+#     fin=nota+decimas
+#     print(f"la nota final es {fin}")
+
+#     if fin>=3.5 and vives:
+#         fin=4.0
+#     if fin>=4:
+#         print("el estudiante pasa")
+#     else:
+#         print("el estudainte repite") 
+
+# total=0
+# a=0
+# e=0
+# r=0
+# t=0
+# def pago():
+#     global total,a,e,r,t
+#     try:
+#         lavado=int(input('''el lavado tiene 3 nivels diferentes
+#                         1.-full $15.000
+#                         2.-standar $10.000
+#                         3.-basico $7.000
+#                         '''))
+#         if lavado==1:
+#             total+=15000
+#             a+=1
+#             t+=1
+#         elif lavado==2:
+#             total+=10000
+#             a+=1
+#             r+=1
+#         elif lavado==3:
+#             total+=7000
+#             a+=1
+#             e+=1
+#     except Exception:
+#         print("solo numeros")
+# def venta():
+
+#     print(f"el total de venta es {total}")
+#     print(f"cuantos autos an ingresado {a}")
+#     if t>=1:
+#         print("el monto mas alto es $15.000")
+#     elif r>=1:
+#         print("el monto mas alto es $10.000")
+#     elif e>=1:
+#         print("el monto mas alto es $7.000")
+# def ventas(): 
+#     while True:
+#         try:
+#             op=int(input('''lavados de autos
+#                         1.-cursa pagos del autos
+#                         2.-ver ventas diarias 
+#                         3.- salir 
+#                         '''))
+            
+#             match op:
+#                 case 1:
+#                     pago()
+#                 case 2:
+#                     venta()
+#                 case 3:
+#                     break
+#                 case _:
+#                     print("ingrese un numero")
+#         except Exception:
+#             print("solo numeros")
+# ventas()
