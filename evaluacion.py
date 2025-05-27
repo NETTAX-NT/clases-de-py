@@ -59,41 +59,109 @@
 #     if desfinal>=1:
 #         print(f"pagar con de cuento {tota-desfinal}")
 # while True:
-    try:
-        op=int(input('''En un delivery de Sushi vende 4 tipos de Sushi:
-                1.-comprar sushi
-                2.-boleta
-                0.-salir
-                '''))
-        match op:
-            case 1:
-                sushi()
-            case 2:
-                bolet()
-            case 0:
-                print("saliendo")
-                break
-            case _:
-                print("solo escoja un numero valido")
-    except Exception:
-        print("solo numeros")
+    # try:
+    #     op=int(input('''En un delivery de Sushi vende 4 tipos de Sushi:
+    #             1.-comprar sushi
+    #             2.-boleta
+    #             0.-salir
+    #             '''))
+    #     match op:
+    #         case 1:
+    #             sushi()
+    #         case 2:
+    #             bolet()
+    #         case 0:
+    #             print("saliendo")
+    #             break
+    #         case _:
+    #             print("solo escoja un numero valido")
+    # except Exception:
+    #     print("solo numeros")
 
-deuda=100000
-def tar():
-  global deuda
+user1=None
+user2=None
+user3=None
+contra1=None
+contra2=None
+contra3=None
+
+def inicio():
   while True:
     while True:
       try:
-        monto=int(input("Cuánto desea pagar?"))
+        user=input("ingrese su usuario: ")
       except Exception:
-        print("Ingrese sólo números enteros")
-      else:
+        print("ingrese solo letras")
+      try:
+        contra=int(input("ingrese su contraseña: "))
         break
-    if monto>=0 and monto<=deuda:
-      deuda=deuda-monto
-    else:
-      print("Monto inválido")
-    print(f"Deuda actualizada, su deuda actual es de {deuda}")
-    choice=input("Para salir pulse x")
-    if choice=="x":
+      except Exception:
+        print("ingrese solo numeros")
+    if (user==user1 and contra==contra1) or (user==user2 and contra==contra2) or (user==user3 and contra==contra3):
+      op=int(input('''seleccione una opcion
+             1) Realizar llamada
+             2) Enviar correo electrónico
+             3) Cerrar sesión
+             '''))
+      match op:
+        case 1:
+          tele()
+        case 2:
+          men()
+        case 3:
+          break
+        case _:
+          print("ingrese un numero valido")
+def regis():
+  global user1,user2,user3,contra1,contra2,contra2,user,contra
+  user=input("creun usuario: ")
+  if user1==None and user1==None:
+    user1=user
+    contra=int(input("ingrese su contraseña: "))
+    contra1=contra
+  elif user2==None and user3==None:
+    user2=user
+    contra=int(input("ingrese su contraseña: "))
+    contra2=contra
+  elif user3==None and user3==None:
+    user3=user
+    contra=int(input("ingrese su contraseña: "))
+    contra3=contra
+def tele():
+  while True:
+    while True:
+      try:
+        llama=input("ingrese el numero: ")
+        break
+      except Exception:
+        print("solo numeros")
+    if llama.startswith("9") and len(llama)==9:
+      print("llamando")
       break
+    else:
+      print("numero invalido vuelva a intertarlo")
+def men():
+  mensaje=input("ingrese el gmail: ")
+  if "@" in mensaje:
+    print(f"sele esta enviando un correo a {mensaje}")
+while True:
+  while True:
+    try:
+      op=int(input('''selecciona una opcion
+                  1.- iniciar sesion
+                  2.- registrar usuario 
+                  3.- salir
+                  '''))
+      break  
+    except Exception:
+      print("selec ciona numeros")
+  match op:
+    case 1:
+      inicio()
+    case 2:
+      regis()
+    case 3:
+      break
+    case _:
+      print("ingrese un numero valido")
+

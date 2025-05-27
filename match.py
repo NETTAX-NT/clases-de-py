@@ -253,3 +253,5 @@ import time
 #         except Exception:
 #             print("solo numeros")
 # ventas()
+
+# para cerrar un programa de sub menu ahi que usar importar sys y luegos escribir  sys.exit()
