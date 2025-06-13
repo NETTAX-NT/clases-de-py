@@ -120,32 +120,101 @@ numeros=[7,5,33,24,9]
 #     case _:
 #       print()
 
-productos=["leche","yogurd","mantequilla"]
-precios=[1500,100,1250]
-carrito=[]
+# productos=["leche","yogurd","mantequilla"]
+# precios=[1500,100,1250]
+# carrito=[]
 
-while True:
-  op=int(input('''seleccionen una opcion
-               1.-ingresar in producto
-               2.-comprar
-               3.-crear boleta
-               4.-salir
-               '''))
-  match op:
-    case 1:
-      agregar=input("ingrese un producto")
-      productos.append(agregar)
-      agregarpre=int(input("ingrese el precio"))
-    case 2:
-      for i in range(len(productos)):
-        print(f"{i+1}-{productos[i]} ${precios[i]}")
-      comprar=int(input("seleccione un producto: "))
-      carrito.append(comprar-1)
-      print(carrito)
-    case 3:
-      total=0
-      for i in carrito:
-        print()
+# while True:
+#   op=int(input('''seleccionen una opcion
+#                1.-ingresar in producto
+#                2.-comprar
+#                3.-crear boleta
+#                4.-salir
+#                '''))
+#   match op:
+#     case 1:
+#       agregar=input("ingrese un producto")
+#       productos.append(agregar)
+#       agregarpre=int(input("ingrese el precio"))
+#     case 2:
+#       for i in range(len(productos)):
+#         print(f"{i+1}-{productos[i]} ${precios[i]}")
+#       comprar=int(input("seleccione un producto: "))
+#       carrito.append(comprar-1)
+#       print(carrito)
+#     case 3:
+#       total=0
+#       for i in carrito:
+#         print(f"{carrito[i]}-------{precios[i]}")
+#         total+=precios[i]
+#       print("")
 
-    case 4:
-      break
+#     case 4:
+#       break
+
+# notas=[7.0,6.0]
+# while True:
+#   while True:
+#     try:
+#       op=int(input('''selecciona una opcion
+#                   1.-ingresar notas
+#                   2.-borrar nota
+#                   3.-mostrar notas
+#                   4.-sacar promedio notas y menores
+#                   5.-limpiar todas las notas
+#                   6.-salir
+#                   '''))
+#       break
+#     except Exception:
+#       print("ingrese un numero entero")
+#   match op:
+#     case 1:
+#       while True:
+#         try:
+#           cuan=int(input("cuantas notas quieres agregar: "))
+#           break
+#         except Exception:
+#           print("ingrese un numero entero")
+#       for i in range(cuan):
+#         agregar_notas=int(input("ingrese sus notas: "))
+#         notas.append(agregar_notas)
+#     case 2:
+#       eliminar=0
+#       for i,nota in enumerate(notas):
+#         i+=1
+#         print(i,".-",nota)
+#       while True:
+#         try:
+#           eliminar=int(input("ingrese una opcion: "))
+#           break
+#         except Exception:
+#           print("ingrese un numero entero")
+#       notas.pop(eliminar-1)
+#     case 3:
+#       if len(notas)==0:
+#         print("no ahi notas")
+#       else:
+#         for e in notas:
+#           print(e)
+#     case 4:
+#       total=0
+#       for r in range(len(notas)):
+#         total+=notas[r]
+#       fin=total/len(notas)
+#       print(f"promedio final {fin}")
+#       notas.sort()
+#       print(f"las notas mayores son {notas[-1]}")
+#       print(f"las notas menores son {notas[0]}")
+#     case 5:
+#       print("eliminado notas")
+#       notas.clear()
+#     case 6:
+#       break
+
+
+vero=[
+    [3,4]
+    [8,9,64,8]
+  ]
+print(vero[1][0])
+
